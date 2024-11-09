@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Test.cs" />
     <Compile Include="Windows2.xaml.cs">
       <DependentUpon>Windows2.xaml</DependentUpon>
     </Compile>

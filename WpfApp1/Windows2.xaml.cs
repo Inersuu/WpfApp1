@@ -19,6 +19,7 @@ namespace WpfApp1
     /// </summary>
     public partial class Windows2 : Window
     {
+        Test test = new Test();
         public Windows2()
         {
             InitializeComponent();
@@ -29,6 +30,12 @@ namespace WpfApp1
             MainWindow windows = new MainWindow();
             windows.Show();
             this.Close();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            test.a++;
+            tbox.Text = Convert.ToString(test.a);
         }
     }
 }
