@@ -34,8 +34,15 @@ namespace WpfApp1
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            test.a++;
-            tbox.Text = Convert.ToString(test.a);
+            
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            tbox.Text = "Это кнопка";
+            Ibg.Source = BitmapFrame.Create(new Uri(@"\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\KorbachevIV\Downloads\2024-10-30_14-29-57.png"));
+            
         }
     }
 }

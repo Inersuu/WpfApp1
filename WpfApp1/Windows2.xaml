@@ -7,9 +7,12 @@
         mc:Ignorable="d"
         Title="Windows2" Height="450" Width="800">
     <Grid>
+        <Image HorizontalAlignment="Left" Height="423" VerticalAlignment="Top" Width="792" x:Name="Ibg"/>
+
         <Button Content="Назад" HorizontalAlignment="Left" VerticalAlignment="Top" Width="235" Margin="269,146,0,0" RenderTransformOrigin="0.512,0.458" Height="108" Click="Button_Click"/>
-        <Button Content="Button" HorizontalAlignment="Left" Height="60" Margin="33,133,0,0" VerticalAlignment="Top" Width="91" Click="Button_Click_1"/>
-        <TextBox HorizontalAlignment="Left" Height="30" Margin="33,63,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Text="0" Name="tbox"/>
+        <TextBox HorizontalAlignment="Left" Height="30" Margin="111,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="79" Text="0" x:Name="tbox"/>
+        <PasswordBox HorizontalAlignment="Left" Height="17" Margin="111,91,0,0" VerticalAlignment="Top" Width="79" Name="Pbox"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="31" Margin="246,59,0,0" VerticalAlignment="Top" Width="63" Click="Button_Click_2"/>
 
     </Grid>
 </Window>
