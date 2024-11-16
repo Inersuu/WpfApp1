@@ -40,9 +40,16 @@ namespace WpfApp1
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            tbox.Text = "Это кнопка";
-            Ibg.Source = BitmapFrame.Create(new Uri(@"\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\KorbachevIV\Downloads\2024-10-30_14-29-57.png"));
+            Test test = new Test();
             
+            string a = tbox1.Text;
+            string b = Pbox.Password;
+            test.b.Add(Tuple.Create(a, b));
+            tbox2.Text = test.b[0].Item1;
+            pbox2.Text = test.b[0].Item2;
+            /*tbox.Text = "Это кнопка";
+            Ibg.Source = BitmapFrame.Create(new Uri(@"\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\KorbachevIV\Downloads\2024-10-30_14-29-57.png"));
+            */
         }
     }
 }

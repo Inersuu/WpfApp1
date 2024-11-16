@@ -5,21 +5,48 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Calculator" Height="450" Width="300">
     <Grid>
-        <Menu Height="25" VerticalAlignment="Top">
-            <MenuItem Header="Файл" Height="25">
-                <MenuItem.Icon>
-                    <Image Source="\\sysprofiles.adm.vvsu.ru\STUDENTRPROFILES$\KorbachevIV\Downloads\2131231.png"></Image>
-                </MenuItem.Icon>
-                <MenuItem Header="Открыть" Click="MenuItem_Click_1"></MenuItem>
-                <Separator/>
-                <MenuItem Header="Сохранить"></MenuItem>
-                <MenuItem Header="Выйти" Click="MenuItem_Click"></MenuItem>
-            </MenuItem>
-        </Menu>
-        <Button Content="Далее" HorizontalAlignment="Left" VerticalAlignment="Top" Width="172" Margin="561,284,0,0" Height="103" Click="Button_Click"/>
-        <Image Name="DisplayImage" HorizontalAlignment="Left" Height="226" Margin="92,59,0,0" VerticalAlignment="Top" Width="376"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <TextBox Name="txtDisplay" Grid.Row="0" Margin="10" FontSize="24" TextAlignment="Right" IsReadOnly="True"/>
+            <Grid Grid.Row="1" Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button Name="btn7" Content="7" FontSize="24" Grid.Row="1" Grid.Column="0"/>
+                <Button Name="btn8" Content="8" FontSize="24" Grid.Row="1" Grid.Column="1"/>
+                <Button Name="btn9" Content="9" FontSize="24" Grid.Row="1" Grid.Column="2"/>
+                <Button Name="btn4" Content="4" FontSize="24" Grid.Row="2" Grid.Column="0"/>
+                <Button Name="btn5" Content="5" FontSize="24" Grid.Row="2" Grid.Column="1"/>
+                <Button Name="btn6" Content="6" FontSize="24" Grid.Row="2" Grid.Column="2"/>
+                <Button Name="btn1" Content="1" FontSize="24" Grid.Row="3" Grid.Column="0" Click="Btn1_Click"/>
+                <Button Name="btn2" Content="2" FontSize="24" Grid.Row="3" Grid.Column="1"/>
+                <Button Name="btn3" Content="3" FontSize="24" Grid.Row="3" Grid.Column="2"/>
+                <Button Name="btn0" Content="0" FontSize="24" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0"/>
 
+                <Button Name="btnAC" Content="AC" FontSize="24" Grid.Row="0" Grid.Column="0" Click="BtnAC_Click"/>
+
+                <Button Name="btnPlus" Content="+" FontSize="24" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" Click="BtnPlus_Click"/>
+                <Button Name="btnMinus" Content="-" FontSize="24" Grid.Row="0" Grid.Column="3"/>
+                <Button Name="btnDelit" Content="/" FontSize="24" Grid.Row="0" Grid.Column="1"/>
+                <Button Name="btnUmnojit" Content="*" FontSize="24" Grid.Row="0" Grid.Column="2"/>
+                <Button Name="btnZapytaya" Content="," FontSize="24" Grid.Row="4" Grid.Column="2"/>
+                <Button Name="btnRovno" Content="=" FontSize="24"  Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" Click="BtnRovno_Click"/>
+            </Grid>
+        </Grid>
     </Grid>
 </Window>

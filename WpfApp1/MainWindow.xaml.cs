@@ -26,7 +26,39 @@ namespace WpfApp1
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void BtnAC_Click(object sender, RoutedEventArgs e)
+        {
+            //txtDisplay.Text = "";
+        }
+
+        private void Btn1_Click(object sender, RoutedEventArgs e)
+        {
+            //string a = txtDisplay.Text;
+            //txtDisplay.Text = a + "1";
+        }
+
+        private void BtnPlus_Click(object sender, RoutedEventArgs e)
+        {
+           //string a = txtDisplay.Text;
+           //txtDisplay.Text = a + " + ";
+        }
+
+        private void BtnRovno_Click(object sender, RoutedEventArgs e)
+        {
+            //int a = Convert.ToInt32(txtDisplay.Text);
+            //txtDisplay.Text = Convert.ToString(a);
+        }
+
+
+
+
+
+
+
+
+
+
+        /*private void Button_Click(object sender, RoutedEventArgs e)
         {
             Windows2 windows2 = new Windows2();
             windows2.Show();
@@ -48,6 +80,6 @@ namespace WpfApp1
                 BitmapImage bitmapImage = new BitmapImage(new Uri(openFileDialog.FileName));
                 DisplayImage.Source = bitmapImage;
             }
-        }
+        }*/
     }
 }
