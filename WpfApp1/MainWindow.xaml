@@ -27,25 +27,25 @@
                     <ColumnDefinition Width="*"/>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
-                <Button Name="btn7" Content="7" FontSize="24" Grid.Row="1" Grid.Column="0"/>
-                <Button Name="btn8" Content="8" FontSize="24" Grid.Row="1" Grid.Column="1"/>
-                <Button Name="btn9" Content="9" FontSize="24" Grid.Row="1" Grid.Column="2"/>
-                <Button Name="btn4" Content="4" FontSize="24" Grid.Row="2" Grid.Column="0"/>
-                <Button Name="btn5" Content="5" FontSize="24" Grid.Row="2" Grid.Column="1"/>
-                <Button Name="btn6" Content="6" FontSize="24" Grid.Row="2" Grid.Column="2"/>
-                <Button Name="btn1" Content="1" FontSize="24" Grid.Row="3" Grid.Column="0" Click="Btn1_Click"/>
-                <Button Name="btn2" Content="2" FontSize="24" Grid.Row="3" Grid.Column="1"/>
-                <Button Name="btn3" Content="3" FontSize="24" Grid.Row="3" Grid.Column="2"/>
-                <Button Name="btn0" Content="0" FontSize="24" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0"/>
+                <Button Name="btn7" Content="7" FontSize="24" Grid.Row="1" Grid.Column="0" Click="NumberButton_Click"/>
+                <Button Name="btn8" Content="8" FontSize="24" Grid.Row="1" Grid.Column="1" Click="NumberButton_Click"/>
+                <Button Name="btn9" Content="9" FontSize="24" Grid.Row="1" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btn4" Content="4" FontSize="24" Grid.Row="2" Grid.Column="0" Click="NumberButton_Click"/>
+                <Button Name="btn5" Content="5" FontSize="24" Grid.Row="2" Grid.Column="1" Click="NumberButton_Click"/>
+                <Button Name="btn6" Content="6" FontSize="24" Grid.Row="2" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btn1" Content="1" FontSize="24" Grid.Row="3" Grid.Column="0" Click="NumberButton_Click"/>
+                <Button Name="btn2" Content="2" FontSize="24" Grid.Row="3" Grid.Column="1" Click="NumberButton_Click"/>
+                <Button Name="btn3" Content="3" FontSize="24" Grid.Row="3" Grid.Column="2" Click="NumberButton_Click"/>
+                <Button Name="btn0" Content="0" FontSize="24" Grid.Row="4" Grid.ColumnSpan="2" Grid.Column="0" Click="NumberButton_Click"/>
 
-                <Button Name="btnAC" Content="AC" FontSize="24" Grid.Row="0" Grid.Column="0" Click="BtnAC_Click"/>
+                <Button Name="btnAC" Content="AC" FontSize="24" Grid.Row="0" Grid.Column="0" Click="ClearButton_Click"/>
 
-                <Button Name="btnPlus" Content="+" FontSize="24" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" Click="BtnPlus_Click"/>
-                <Button Name="btnMinus" Content="-" FontSize="24" Grid.Row="0" Grid.Column="3"/>
-                <Button Name="btnDelit" Content="/" FontSize="24" Grid.Row="0" Grid.Column="1"/>
-                <Button Name="btnUmnojit" Content="*" FontSize="24" Grid.Row="0" Grid.Column="2"/>
-                <Button Name="btnZapytaya" Content="," FontSize="24" Grid.Row="4" Grid.Column="2"/>
-                <Button Name="btnRovno" Content="=" FontSize="24"  Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" Click="BtnRovno_Click"/>
+                <Button Name="btnPlus" Content="+" FontSize="24" Grid.Row="1" Grid.RowSpan="2" Grid.Column="3" Click="OperationButton_Click"/>
+                <Button Name="btnMinus" Content="-" FontSize="24" Grid.Row="0" Grid.Column="3" Click="OperationButton_Click"/>
+                <Button Name="btnDelit" Content="/" FontSize="24" Grid.Row="0" Grid.Column="1" Click="OperationButton_Click"/>
+                <Button Name="btnUmnojit" Content="*" FontSize="24" Grid.Row="0" Grid.Column="2" Click="OperationButton_Click"/>
+                <Button Name="btnZapytaya" Content="," FontSize="24" Grid.Row="4" Grid.Column="2" Click="OperationButton_Click"/>
+                <Button Name="btnRovno" Content="=" FontSize="24"  Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" Click="EqualsButton_Click"/>
             </Grid>
         </Grid>
     </Grid>
