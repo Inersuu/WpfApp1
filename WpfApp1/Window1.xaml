@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="Window1" Height="485.39" Width="278.163">
+    <Grid>
+        <StackPanel>
+            <TextBlock Text="Кто такой В.В. Путин?"></TextBlock>
+            <RadioButton Name="Radiobtn1" GroupName="Test1" Content="Царь"/>
+            <RadioButton Name="Radiobtn2" GroupName="Test1" Content="Наш боженька"/>
+            <RadioButton Name="Radiobtn3" GroupName="Test1" Content="Слоняра"/>
+            <RadioButton Name="Radiobtn4" GroupName="Test1" Content="Всё из перечисленного"/>
+            <Separator/>
+            <TextBlock Text="Чей крым?"></TextBlock>
+            <RadioButton Name="Radiobtn5" GroupName="Test2" Content="Свободный"/>
+            <RadioButton Name="Radiobtn6" GroupName="Test2" Content="Наш"/>
+            <RadioButton Name="Radiobtn7" GroupName="Test2" Content="Украинский"/>
+            <Separator/>
+            <TextBlock Text="Когда Владивосток стал не секретным городом?"></TextBlock>
+            <RadioButton Name="Radiobtn8" GroupName="Test3" Content="12 ноября 1991 г"/>
+            <RadioButton Name="Radiobtn9" GroupName="Test3" Content="3 января 1991 г"/>
+            <RadioButton Name="Radiobtn10" GroupName="Test3" Content="1 января 1992 г"/>
+            <RadioButton Name="Radiobtn11" GroupName="Test3" Content="20 Декабря 1992 г"/>
+            <Separator/>
+            <TextBlock Text="Кто наш препод по C#?"></TextBlock>
+            <RadioButton Name="Radiobtn12" GroupName="Test4" Content="Кравцов Даниил Андреевич"/>
+            <RadioButton Name="Radiobtn13" GroupName="Test4" Content="Клепалов Константин Олегович"/>
+            <RadioButton Name="Radiobtn14" GroupName="Test4" Content="Купчик Артём Павлович"/>
+            <Separator/>
+            <TextBlock Text="В каком году произошло крещение древней руси?"></TextBlock>
+            <RadioButton Name="Radiobtn15" GroupName="Test5" Content="1020"/>
+            <RadioButton Name="Radiobtn16" GroupName="Test5" Content="1915"/>
+            <RadioButton Name="Radiobtn17" GroupName="Test5" Content="988"/>
+            <RadioButton Name="Radiobtn18" GroupName="Test5" Content="2024"/>
+            <RadioButton Name="Radiobtn19" GroupName="Test5" Content="512"/>
+            <Button Content="Отправить ответы в ФСБ" Name="button" Click="Button_Click"></Button>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -47,6 +47,7 @@
                 <Button Name="btnZapytaya" Content="," FontSize="24" Grid.Row="4" Grid.Column="2" Click="OperationButton_Click"/>
                 <Button Name="btnRovno" Content="=" FontSize="24"  Grid.Row="3" Grid.RowSpan="2" Grid.Column="3" Click="EqualsButton_Click"/>
             </Grid>
+            <Button Content="Button" HorizontalAlignment="Left" Height="18" Margin="220,47,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="62" Click="Button_Click"/>
         </Grid>
     </Grid>
 </Window>

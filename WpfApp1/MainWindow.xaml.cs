@@ -57,6 +57,7 @@ namespace WpfApp1
                 case '+':
                     _currentValue = _storedValue + _currentValue;
                     break;
+
                 case '-':
                     _currentValue = _storedValue - _currentValue;
                     break;
@@ -84,7 +85,14 @@ namespace WpfApp1
             _storedValue = 0;
             _operation = '\0';
         }
-        
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Window1 window1 = new Window1();
+            window1.Show();
+            this.Close();
+        }
+
 
 
 
